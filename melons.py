@@ -10,6 +10,7 @@ It reads melon data in from a text file.
 class Melon:
     """An Ubermelon Melon type."""
 
+
     def __init__(
         self,
         melon_id,
@@ -18,7 +19,7 @@ class Melon:
         price,
         image_url,
         color,
-        seedless,
+        seedless
     ):
         self.melon_id = melon_id
         self.melon_type = melon_type
@@ -27,6 +28,8 @@ class Melon:
         self.image_url = image_url
         self.color = color
         self.seedless = seedless
+        self.quantity = 0
+        self.total_price = 0
 
     def price_str(self):
         """Return price formatted as string $x.xx"""
